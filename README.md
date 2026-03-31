@@ -30,8 +30,8 @@ Clone the repository and initialize the local environment with just a few simple
 ```bash
 git clone https://github.com/JackProAi/JackProAi-claudecode.git
 cd JackProAi-claudecode
-chmod +x claude-local
-./claude-local --init-env
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\claude-local.ps1 --init-env
 ```
 
 ### 🔑 Core API Configuration
@@ -43,7 +43,7 @@ After initializing the environment, you need to modify the configuration file in
 If you haven't generated this file yet, please execute the environment initialization command first:
 
 ```bash
-./claude-local --init-env
+.\claude-local.ps1 --init-env
 ```
 
 Open `claude-local.env`, and replace the placeholder with your actual API key:
